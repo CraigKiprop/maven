@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    // Build automation tool: Maven
+                    bat 'mvn clean package'
+                }
+            }
+        }
+        
+        // Other stages...
+    }
+    
+    // Post stage actions...
+}

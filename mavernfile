@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Change to your project's directory
-                    dir('path_to_your_project_directory') {
+                    dir('C:\Users\craim\OneDrive\Desktop\GIT\Task62C') {
                         // Build automation tool: Maven
                         bat 'mvn clean package'
                     }

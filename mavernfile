@@ -5,8 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Build automation tool: Maven
-                    bat 'mvn clean package'
+                    // Change to your project's directory
+                    dir('path_to_your_project_directory') {
+                        // Build automation tool: Maven
+                        bat 'mvn clean package'
+                    }
                 }
             }
         }
